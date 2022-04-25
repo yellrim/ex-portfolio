@@ -584,7 +584,7 @@
                                 <h3>WEB STANDARD</h3>
                                 <h4>WEB<br>STANDARD</h4>
                                 <hr>
-                                <button>VIEW SITE</button>
+                                <button id="port1">VIEW SITE</button>
                             </div>
                         </div>
                         <div class="port port2">
@@ -595,7 +595,7 @@
                                 <h3>WEB RESPONSIVE</h3>
                                 <h4>WEB<br>RESPONSIVE</h4>
                                 <hr>
-                                <button>VIEW SITE</button>
+                                <button id="port2">VIEW SITE</button>
                             </div>
                         </div>
                         <div class="port port3">
@@ -606,7 +606,7 @@
                                 <h3>WEB RESPONSIVE</h3>
                                 <h4>GABIA<br>RESPONSIVE</h4>
                                 <hr>
-                                <button>VIEW SITE</button>
+                                <button id="port3">VIEW SITE</button>
                             </div>
                         </div>
                         <div class="port port4">
@@ -617,7 +617,7 @@
                                 <h3>WEB STANDARD</h3>
                                 <h4>LOCK &<br>LOCK SITE</h4>
                                 <hr>
-                                <button>VIEW SITE</button>
+                                <button id="port4">VIEW SITE</button>
                             </div>
                         </div>
                         <div class="port port5">
@@ -628,7 +628,7 @@
                                 <h3>MOBILE</h3>
                                 <h4>MOBILE<br>SITE</h4>
                                 <hr>
-                                <button>VIEW SITE</button>
+                                <button id="port5">VIEW SITE</button>
                             </div>
                         </div>
                     </div>
@@ -668,14 +668,6 @@
             </div>
         </section>
 
-        <section class="section thank-you">
-            <div class="container">
-                <div class="row">
-                    <p>Thank you for visition <br> my portfolio</p>
-                </div>
-            </div>
-        </section>
-
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -696,6 +688,17 @@
             delay:200,
             duration: 1000,
         });
+
+        let btnPort1 = document.getElementById('port1')
+        let btnPort2 = document.getElementById('port2')
+        let btnPort3 = document.getElementById('port3')
+        let btnPort4 = document.getElementById('port4')
+        let btnPort5 = document.getElementById('port5')
+
+        btnPort1.addEventListener('click',function(){
+            window.open('https://www.naver.com','_blank');
+        })
+
     </script>
 </body>
 </html>
